@@ -1,4 +1,4 @@
-# pmc XML Parser
+# XML parser for PubMed Central (PMC) Database
 
 ## Installation
 ```bash
@@ -6,6 +6,7 @@ python3 -m pip install pmc_xml
 ```
 
 ## Usage
+
 ### CommandLine
 ```bash
 pmc_xml --help
