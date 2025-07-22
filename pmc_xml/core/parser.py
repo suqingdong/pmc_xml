@@ -27,7 +27,7 @@ def parse_tree(tree):
             article_meta = front.find('article-meta')
             journal_meta = front.find('journal-meta')
             
-            context['pmc'] = 'PMC' + article_meta.findtext('article-id[@pub-id-type="pmc"]')
+            context['pmc'] = 'PMC' + article_meta.findtext('article-id[@pub-id-type="pmcid"]')
             context['doi'] = article_meta.findtext('article-id[@pub-id-type="doi"]')
             context['pmid'] = article_meta.findtext('article-id[@pub-id-type="pmid"]')
             # print(context['pmc'])
