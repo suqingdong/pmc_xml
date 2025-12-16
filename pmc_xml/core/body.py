@@ -1,4 +1,7 @@
 def parse_body(body):
+    if body is None:
+        return []
+
     def get_data():
         for sec in body.iterfind('sec'):
             title = sec.find('title').text
